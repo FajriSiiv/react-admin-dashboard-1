@@ -6,13 +6,12 @@ import Dashboard from "./scenes/dashboard";
 import Team from "./scenes/Team";
 import Invoices from "./scenes/Invoices";
 import Contacts from "./scenes/Contacts";
-// import Bar from "./scenes/Bar";
+import Bar from "./scenes/Bar";
 import Form from "./scenes/Form";
-// import Line from "./scenes/Line";
-// import Pie from "./scenes/Pie";
-// import FAQ from "./scenes/FAQ";
-// import Geography from "./scenes/Geography";
-// import Calendar from "./scenes/Calendar";
+import Line from "./scenes/Line";
+import Pie from "./scenes/Pie";
+import FAQ from "./scenes/FAQ";
+import Calendar from "./scenes/Calendar";
 import { Route, Routes } from "react-router-dom";
 import { ProSidebarProvider } from "react-pro-sidebar";
 
@@ -34,14 +33,12 @@ function App() {
                 <Route path="/contacts" element={<Contacts />} />
                 <Route path="/invoices" element={<Invoices />} />
                 <Route path="/form" element={<Form />} />
+                <Route path="/calendar" element={<Calendar />} />
+                <Route path="/FAQ" element={<FAQ />} />
+                <Route path="/bar" element={<Bar />} />
+                <Route path="/pie" element={<Pie />} />
 
-                {/* 
-              2:21:44
-              <Route path="/bar" element={<Bar />} />
-              <Route path="/line" element={<Line />} />
-              <Route path="/FAQ" element={<FAQ />} />
-              <Route path="/geography" element={<Geography />} />
-              <Route path="/calendar" element={<Calendar />} /> */}
+                <Route path="/line" element={<Line />} />
               </Routes>
             </main>
           </div>
